@@ -10,6 +10,8 @@
 		45E3712B1C3D02FF00D892DE /* OSMapKitAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E3712A1C3D02FF00D892DE /* OSMapKitAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45E371321C3D02FF00D892DE /* OSMapKitAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; };
 		45E371371C3D02FF00D892DE /* OSMapKitAdapterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E371361C3D02FF00D892DE /* OSMapKitAdapterTests.m */; };
+		45E371431C3D054800D892DE /* OSTileOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E371411C3D054800D892DE /* OSTileOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45E371441C3D054800D892DE /* OSTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E371421C3D054800D892DE /* OSTileOverlay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		45E371311C3D02FF00D892DE /* OSMapKitAdapterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSMapKitAdapterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E371361C3D02FF00D892DE /* OSMapKitAdapterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSMapKitAdapterTests.m; sourceTree = "<group>"; };
 		45E371381C3D02FF00D892DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E371411C3D054800D892DE /* OSTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSTileOverlay.h; sourceTree = "<group>"; };
+		45E371421C3D054800D892DE /* OSTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSTileOverlay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				45E3712A1C3D02FF00D892DE /* OSMapKitAdapter.h */,
 				45E3712C1C3D02FF00D892DE /* Info.plist */,
+				45E371411C3D054800D892DE /* OSTileOverlay.h */,
+				45E371421C3D054800D892DE /* OSTileOverlay.m */,
 			);
 			path = OSMapKitAdapter;
 			sourceTree = "<group>";
@@ -94,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45E3712B1C3D02FF00D892DE /* OSMapKitAdapter.h in Headers */,
+				45E371431C3D054800D892DE /* OSTileOverlay.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E371441C3D054800D892DE /* OSTileOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
