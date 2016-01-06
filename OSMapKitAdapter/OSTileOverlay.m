@@ -24,6 +24,7 @@ NSString *const _OSURLTemplate = @"https://api.ordnancesurvey.co.uk/mapping_api/
 - (instancetype)initWithAPIKey:(NSString *)apiKey product:(OSMapProduct)product {
     NSString *template = [OSTileOverlay urlTemplateForAPIKey:apiKey product:product];
     if (self = [super initWithURLTemplate:template]) {
+        self.canReplaceMapContent = YES;
     }
     return self;
 }
