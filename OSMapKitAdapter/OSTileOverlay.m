@@ -7,13 +7,17 @@
 //
 
 #import "OSTileOverlay.h"
+#import "OSUKRegion.h"
 
 NSString *const _OSURLTemplate = @"https://api.ordnancesurvey.co.uk/mapping_api/"
                                   "service/zxy/EPSG%%3A900913/%@/{z}/{x}/{y}.png"
                                   "?apikey=%@";
 
 @implementation OSTileOverlay
-//@synthesize boundingMapRect;
+
+- (MKMapRect)boundingMapRect {
+    return self.clipOverlay ? OSMapRectForUK() : MKMapRectWorld;
+}
 
 + (NSString *)urlTemplateForAPIKey:(NSString *)apiKey product:(OSMapProduct)product {
     NSString *escapedProduct = [NSStringFromOSMapProduct(product)

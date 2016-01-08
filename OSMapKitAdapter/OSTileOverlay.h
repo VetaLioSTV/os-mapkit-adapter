@@ -14,7 +14,14 @@
  */
 @interface OSTileOverlay : MKTileOverlay
 
-@property (nonatomic, assign) MKMapRect boundingMapRect;
+/**
+ *  When set to YES, the overlay will only display its content within
+ *  the bounds of the area provided by the OS Maps API. Outside of that
+ *  area you will still see the original mapping. When set to NO, the
+ *  OS Maps will display, and all other areas will be blank. It is then
+ *  up to the user to limit the map's movement to that area.
+ */
+@property (nonatomic, assign) BOOL clipOverlay;
 
 /**
  *  Designated initialiser

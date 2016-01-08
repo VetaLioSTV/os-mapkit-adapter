@@ -35,10 +35,8 @@
     self.topLeftCoordinate = OSCoordinateForGridPoint(OSGridPointMake(0, OSGridHeight));
     self.bottomRightCoordinate = OSCoordinateForGridPoint(OSGridPointMake(OSGridWidth, 0));
 
-    MKMapPoint upperLeft = MKMapPointForCoordinate(self.topLeftCoordinate);
-    MKMapPoint lowerRight = MKMapPointForCoordinate(self.bottomRightCoordinate);
-    MKMapRect boundingRect = MKMapRectMake(upperLeft.x, upperLeft.y, lowerRight.x - upperLeft.x, lowerRight.y - upperLeft.y);
-    //    tileOverlay.boundingMapRect = boundingRect;
+    tileOverlay.clipOverlay = NO; // YES allows the overlay to render alongside other maps,
+                                  // NO replaces all MapKit content
 
     [self.mapView addOverlay:tileOverlay];
     self.mapView.delegate = self;

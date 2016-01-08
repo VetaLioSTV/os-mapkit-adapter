@@ -8,6 +8,7 @@
 
 @import MIQTestingFramework;
 @import OSMapKitAdapter;
+@import MapKit;
 
 @interface OSTIleOverlayTests : XCTestCase
 
@@ -23,6 +24,19 @@
 - (void)testTheOverlayIntendsToReplaceContent {
     OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@"test-key" product:OSMapProductZoom];
     expect(tileOverlay.canReplaceMapContent).to.beTruthy();
+}
+
+- (void)testWhenSetToNotClipTheBoundingMapRectIsNull {
+    OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@"test-key" product:OSMapProductZoom];
+    MKMapRect receivedRect = tileOverlay.boundingMapRect;
+    expect(MKMapRectEqualToRect(receivedRect, MKMapRectWorld)).to.beTruthy();
+}
+
+- (void)testWhenSetToClipTheBoundingMapRectIsSetCorrectly {
+    OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@"test-key" product:OSMapProductZoom];
+    tileOverlay.clipOverlay = YES;
+    MKMapRect receivedRect = tileOverlay.boundingMapRect;
+    expect(MKMapRectEqualToRect(receivedRect, OSMapRectForUK())).to.beTruthy();
 }
 
 @end

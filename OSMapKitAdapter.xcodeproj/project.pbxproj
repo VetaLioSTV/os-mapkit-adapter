@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4531D08B1C3FD6DA0025C802 /* APIKEY in Resources */ = {isa = PBXBuildFile; fileRef = 4531D08A1C3FD6DA0025C802 /* APIKEY */; };
 		4531D08C1C3FD6DA0025C802 /* APIKEY in Resources */ = {isa = PBXBuildFile; fileRef = 4531D08A1C3FD6DA0025C802 /* APIKEY */; };
+		4531D08D1C3FE07E0025C802 /* OSGridPointConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */; };
+		454B95061C3FE8FC00CA69FB /* OSGridPointConversion.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		454B95091C3FE96300CA69FB /* OSUKRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = 454B95071C3FE96300CA69FB /* OSUKRegion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		454B950A1C3FE96300CA69FB /* OSUKRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 454B95081C3FE96300CA69FB /* OSUKRegion.m */; };
 		45E3712B1C3D02FF00D892DE /* OSMapKitAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E3712A1C3D02FF00D892DE /* OSMapKitAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45E371321C3D02FF00D892DE /* OSMapKitAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; };
 		45E371431C3D054800D892DE /* OSTileOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E371411C3D054800D892DE /* OSTileOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -77,6 +81,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				454B95061C3FE8FC00CA69FB /* OSGridPointConversion.framework in CopyFiles */,
 				45E371601C3D184100D892DE /* Expecta.framework in CopyFiles */,
 				45E371611C3D184100D892DE /* MIQTestingFramework.framework in CopyFiles */,
 				45E371621C3D184100D892DE /* OCMock.framework in CopyFiles */,
@@ -113,6 +118,8 @@
 
 /* Begin PBXFileReference section */
 		4531D08A1C3FD6DA0025C802 /* APIKEY */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = APIKEY; sourceTree = "<group>"; };
+		454B95071C3FE96300CA69FB /* OSUKRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUKRegion.h; sourceTree = "<group>"; };
+		454B95081C3FE96300CA69FB /* OSUKRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSUKRegion.m; sourceTree = "<group>"; };
 		45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSMapKitAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E3712A1C3D02FF00D892DE /* OSMapKitAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSMapKitAdapter.h; sourceTree = "<group>"; };
 		45E3712C1C3D02FF00D892DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4531D08D1C3FE07E0025C802 /* OSGridPointConversion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +230,8 @@
 				45E371421C3D054800D892DE /* OSTileOverlay.m */,
 				45E371661C3D260500D892DE /* OSMapProduct.h */,
 				45E371671C3D260500D892DE /* OSMapProduct.m */,
+				454B95071C3FE96300CA69FB /* OSUKRegion.h */,
+				454B95081C3FE96300CA69FB /* OSUKRegion.m */,
 			);
 			path = OSMapKitAdapter;
 			sourceTree = "<group>";
@@ -300,6 +310,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454B95091C3FE96300CA69FB /* OSUKRegion.h in Headers */,
 				45E371681C3D260500D892DE /* OSMapProduct.h in Headers */,
 				45E3712B1C3D02FF00D892DE /* OSMapKitAdapter.h in Headers */,
 				45E371431C3D054800D892DE /* OSTileOverlay.h in Headers */,
@@ -475,6 +486,7 @@
 			files = (
 				45E371691C3D260500D892DE /* OSMapProduct.m in Sources */,
 				45E371441C3D054800D892DE /* OSTileOverlay.m in Sources */,
+				454B950A1C3FE96300CA69FB /* OSUKRegion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +670,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = OSMapKitAdapter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -674,6 +690,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = OSMapKitAdapter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
