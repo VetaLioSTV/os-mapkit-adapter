@@ -21,9 +21,15 @@
 
 @implementation ViewController
 
+- (NSString *)apiKey {
+    return [NSString stringWithContentsOfURL:[NSBundle.mainBundle URLForResource:@"APIKEY" withExtension:nil]
+                                    encoding:NSUTF8StringEncoding
+                                       error:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@""
+    OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:self.apiKey
                                                                product:OSMapProductZoom];
 
     self.topLeftCoordinate = OSCoordinateForGridPoint(OSGridPointMake(0, OSGridHeight));

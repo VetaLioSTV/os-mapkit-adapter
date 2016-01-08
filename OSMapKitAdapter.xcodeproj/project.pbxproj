@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4531D08B1C3FD6DA0025C802 /* APIKEY in Resources */ = {isa = PBXBuildFile; fileRef = 4531D08A1C3FD6DA0025C802 /* APIKEY */; };
+		4531D08C1C3FD6DA0025C802 /* APIKEY in Resources */ = {isa = PBXBuildFile; fileRef = 4531D08A1C3FD6DA0025C802 /* APIKEY */; };
 		45E3712B1C3D02FF00D892DE /* OSMapKitAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E3712A1C3D02FF00D892DE /* OSMapKitAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45E371321C3D02FF00D892DE /* OSMapKitAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; };
 		45E371431C3D054800D892DE /* OSTileOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E371411C3D054800D892DE /* OSTileOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -110,6 +112,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4531D08A1C3FD6DA0025C802 /* APIKEY */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = APIKEY; sourceTree = "<group>"; };
 		45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSMapKitAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E3712A1C3D02FF00D892DE /* OSMapKitAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSMapKitAdapter.h; sourceTree = "<group>"; };
 		45E3712C1C3D02FF00D892DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -189,6 +192,7 @@
 		45E3711D1C3D02FF00D892DE = {
 			isa = PBXGroup;
 			children = (
+				4531D08A1C3FD6DA0025C802 /* APIKEY */,
 				45E371291C3D02FF00D892DE /* OSMapKitAdapter */,
 				45E371351C3D02FF00D892DE /* OSMapKitAdapterTests */,
 				45E371711C3D3DD700D892DE /* MapKitExampleObjC */,
@@ -445,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45E371821C3D3DD700D892DE /* LaunchScreen.storyboard in Resources */,
+				4531D08B1C3FD6DA0025C802 /* APIKEY in Resources */,
 				45E3717F1C3D3DD700D892DE /* Assets.xcassets in Resources */,
 				45E3717D1C3D3DD700D892DE /* Main.storyboard in Resources */,
 			);
@@ -455,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45E371981C3D3DE600D892DE /* LaunchScreen.storyboard in Resources */,
+				4531D08C1C3FD6DA0025C802 /* APIKEY in Resources */,
 				45E371951C3D3DE600D892DE /* Assets.xcassets in Resources */,
 				45E371931C3D3DE600D892DE /* Main.storyboard in Resources */,
 			);
@@ -807,6 +813,7 @@
 				45E371861C3D3DD700D892DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45E3719A1C3D3DE600D892DE /* Build configuration list for PBXNativeTarget "MapKitExampleSwift" */ = {
 			isa = XCConfigurationList;
@@ -815,6 +822,7 @@
 				45E3719C1C3D3DE600D892DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
