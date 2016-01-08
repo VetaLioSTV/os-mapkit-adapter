@@ -38,6 +38,10 @@
 		45E371981C3D3DE600D892DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E371961C3D3DE600D892DE /* LaunchScreen.storyboard */; };
 		45E3719E1C3D3EB600D892DE /* OSMapKitAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; };
 		45E3719F1C3D3EB600D892DE /* OSMapKitAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45E371A51C3D560200D892DE /* OSGridPointConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */; };
+		45E371A61C3D560200D892DE /* OSGridPointConversion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45E371A71C3D560200D892DE /* OSMapKitAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; };
+		45E371A81C3D560200D892DE /* OSMapKitAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,13 @@
 			remoteInfo = OSMapKitAdapter;
 		};
 		45E371A01C3D3EB600D892DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45E3711E1C3D02FF00D892DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45E371261C3D02FF00D892DE;
+			remoteInfo = OSMapKitAdapter;
+		};
+		45E371A91C3D560200D892DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 45E3711E1C3D02FF00D892DE /* Project object */;
 			proxyType = 1;
@@ -80,6 +91,18 @@
 			dstSubfolderSpec = 10;
 			files = (
 				45E3719F1C3D3EB600D892DE /* OSMapKitAdapter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E371AB1C3D560200D892DE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				45E371A81C3D560200D892DE /* OSMapKitAdapter.framework in Embed Frameworks */,
+				45E371A61C3D560200D892DE /* OSGridPointConversion.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +142,7 @@
 		45E371941C3D3DE600D892DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E371971C3D3DE600D892DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45E371991C3D3DE600D892DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSGridPointConversion.framework; path = Carthage/Build/iOS/OSGridPointConversion.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +170,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E371A71C3D560200D892DE /* OSMapKitAdapter.framework in Frameworks */,
+				45E371A51C3D560200D892DE /* OSGridPointConversion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +193,7 @@
 				45E371351C3D02FF00D892DE /* OSMapKitAdapterTests */,
 				45E371711C3D3DD700D892DE /* MapKitExampleObjC */,
 				45E3718C1C3D3DE600D892DE /* MapKitExampleSwift */,
+				45E371A31C3D559F00D892DE /* Frameworks */,
 				45E371281C3D02FF00D892DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -254,6 +281,14 @@
 			path = MapKitExampleSwift;
 			sourceTree = "<group>";
 		};
+		45E371A31C3D559F00D892DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -314,10 +349,12 @@
 				45E3716C1C3D3DD700D892DE /* Sources */,
 				45E3716D1C3D3DD700D892DE /* Frameworks */,
 				45E3716E1C3D3DD700D892DE /* Resources */,
+				45E371AB1C3D560200D892DE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				45E371AA1C3D560200D892DE /* PBXTargetDependency */,
 			);
 			name = MapKitExampleObjC;
 			productName = MapKitExampleObjC;
@@ -475,6 +512,11 @@
 			target = 45E371261C3D02FF00D892DE /* OSMapKitAdapter */;
 			targetProxy = 45E371A01C3D3EB600D892DE /* PBXContainerItemProxy */;
 		};
+		45E371AA1C3D560200D892DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45E371261C3D02FF00D892DE /* OSMapKitAdapter */;
+			targetProxy = 45E371A91C3D560200D892DE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -534,6 +576,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -581,6 +624,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -677,6 +721,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MapKitExampleObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MapKitExampleObjC;
@@ -688,6 +736,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MapKitExampleObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MapKitExampleObjC;

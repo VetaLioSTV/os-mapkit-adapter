@@ -13,6 +13,7 @@ NSString *const _OSURLTemplate = @"https://api.ordnancesurvey.co.uk/mapping_api/
                                   "?apikey=%@";
 
 @implementation OSTileOverlay
+//@synthesize boundingMapRect;
 
 + (NSString *)urlTemplateForAPIKey:(NSString *)apiKey product:(OSMapProduct)product {
     NSString *escapedProduct = [NSStringFromOSMapProduct(product)

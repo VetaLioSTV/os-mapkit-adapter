@@ -14,6 +14,8 @@
  */
 @interface OSTileOverlay : MKTileOverlay
 
+@property (nonatomic, assign) MKMapRect boundingMapRect;
+
 /**
  *  Designated initialiser
  *
