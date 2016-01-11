@@ -9,6 +9,8 @@
 @import MapKit;
 #import "OSMapProduct.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  *  Tile overlay subclass to use to connect to OS Maps API
  */
@@ -33,6 +35,8 @@
  */
 - (instancetype)initWithAPIKey:(NSString *)apiKey product:(OSMapProduct)product NS_DESIGNATED_INITIALIZER;
 
-- (instancetype)initWithURLTemplate:(NSString *)URLTemplate NS_UNAVAILABLE;
+- (instancetype)initWithURLTemplate:(nullable NSString *)URLTemplate NS_UNAVAILABLE;
 
 @end
+
+NS_ASSUME_NONNULL_END

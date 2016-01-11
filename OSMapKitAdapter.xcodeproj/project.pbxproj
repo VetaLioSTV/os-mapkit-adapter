@@ -13,6 +13,9 @@
 		454B95061C3FE8FC00CA69FB /* OSGridPointConversion.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		454B95091C3FE96300CA69FB /* OSUKRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = 454B95071C3FE96300CA69FB /* OSUKRegion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		454B950A1C3FE96300CA69FB /* OSUKRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 454B95081C3FE96300CA69FB /* OSUKRegion.m */; };
+		454B950D1C3FF15F00CA69FB /* OSMapViewRegionRestriction.h in Headers */ = {isa = PBXBuildFile; fileRef = 454B950B1C3FF15F00CA69FB /* OSMapViewRegionRestriction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		454B950E1C3FF15F00CA69FB /* OSMapViewRegionRestriction.m in Sources */ = {isa = PBXBuildFile; fileRef = 454B950C1C3FF15F00CA69FB /* OSMapViewRegionRestriction.m */; };
+		454B95101C3FF7AF00CA69FB /* OSMapViewRegionRestrictionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 454B950F1C3FF7AF00CA69FB /* OSMapViewRegionRestrictionTests.m */; };
 		45E3712B1C3D02FF00D892DE /* OSMapKitAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E3712A1C3D02FF00D892DE /* OSMapKitAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45E371321C3D02FF00D892DE /* OSMapKitAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; };
 		45E371431C3D054800D892DE /* OSTileOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E371411C3D054800D892DE /* OSTileOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -120,6 +123,9 @@
 		4531D08A1C3FD6DA0025C802 /* APIKEY */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = APIKEY; sourceTree = "<group>"; };
 		454B95071C3FE96300CA69FB /* OSUKRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUKRegion.h; sourceTree = "<group>"; };
 		454B95081C3FE96300CA69FB /* OSUKRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSUKRegion.m; sourceTree = "<group>"; };
+		454B950B1C3FF15F00CA69FB /* OSMapViewRegionRestriction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMapViewRegionRestriction.h; sourceTree = "<group>"; };
+		454B950C1C3FF15F00CA69FB /* OSMapViewRegionRestriction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMapViewRegionRestriction.m; sourceTree = "<group>"; };
+		454B950F1C3FF7AF00CA69FB /* OSMapViewRegionRestrictionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMapViewRegionRestrictionTests.m; sourceTree = "<group>"; };
 		45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSMapKitAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E3712A1C3D02FF00D892DE /* OSMapKitAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSMapKitAdapter.h; sourceTree = "<group>"; };
 		45E3712C1C3D02FF00D892DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -232,6 +238,8 @@
 				45E371671C3D260500D892DE /* OSMapProduct.m */,
 				454B95071C3FE96300CA69FB /* OSUKRegion.h */,
 				454B95081C3FE96300CA69FB /* OSUKRegion.m */,
+				454B950B1C3FF15F00CA69FB /* OSMapViewRegionRestriction.h */,
+				454B950C1C3FF15F00CA69FB /* OSMapViewRegionRestriction.m */,
 			);
 			path = OSMapKitAdapter;
 			sourceTree = "<group>";
@@ -242,6 +250,7 @@
 				45E371451C3D124000D892DE /* Frameworks */,
 				45E371381C3D02FF00D892DE /* Info.plist */,
 				45E3716A1C3D2DDE00D892DE /* OSTIleOverlayTests.m */,
+				454B950F1C3FF7AF00CA69FB /* OSMapViewRegionRestrictionTests.m */,
 			);
 			path = OSMapKitAdapterTests;
 			sourceTree = "<group>";
@@ -311,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				454B95091C3FE96300CA69FB /* OSUKRegion.h in Headers */,
+				454B950D1C3FF15F00CA69FB /* OSMapViewRegionRestriction.h in Headers */,
 				45E371681C3D260500D892DE /* OSMapProduct.h in Headers */,
 				45E3712B1C3D02FF00D892DE /* OSMapKitAdapter.h in Headers */,
 				45E371431C3D054800D892DE /* OSTileOverlay.h in Headers */,
@@ -484,6 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454B950E1C3FF15F00CA69FB /* OSMapViewRegionRestriction.m in Sources */,
 				45E371691C3D260500D892DE /* OSMapProduct.m in Sources */,
 				45E371441C3D054800D892DE /* OSTileOverlay.m in Sources */,
 				454B950A1C3FE96300CA69FB /* OSUKRegion.m in Sources */,
@@ -494,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454B95101C3FF7AF00CA69FB /* OSMapViewRegionRestrictionTests.m in Sources */,
 				45E3716B1C3D2DDE00D892DE /* OSTIleOverlayTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
