@@ -16,6 +16,7 @@
 		454B950D1C3FF15F00CA69FB /* OSMapViewRegionRestriction.h in Headers */ = {isa = PBXBuildFile; fileRef = 454B950B1C3FF15F00CA69FB /* OSMapViewRegionRestriction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		454B950E1C3FF15F00CA69FB /* OSMapViewRegionRestriction.m in Sources */ = {isa = PBXBuildFile; fileRef = 454B950C1C3FF15F00CA69FB /* OSMapViewRegionRestriction.m */; };
 		454B95101C3FF7AF00CA69FB /* OSMapViewRegionRestrictionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 454B950F1C3FF7AF00CA69FB /* OSMapViewRegionRestrictionTests.m */; };
+		454B95141C4402F200CA69FB /* OSGridPointConversion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45E3712B1C3D02FF00D892DE /* OSMapKitAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E3712A1C3D02FF00D892DE /* OSMapKitAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45E371321C3D02FF00D892DE /* OSMapKitAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; };
 		45E371431C3D054800D892DE /* OSTileOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E371411C3D054800D892DE /* OSTileOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -100,6 +101,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				454B95141C4402F200CA69FB /* OSGridPointConversion.framework in Embed Frameworks */,
 				45E3719F1C3D3EB600D892DE /* OSMapKitAdapter.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";

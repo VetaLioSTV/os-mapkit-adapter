@@ -13,16 +13,17 @@ import OSMapKitAdapter
 class ViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
+    private var restriction = OSMapViewRegionRestriction()
 
-    var apiKey: String? {
+    var apiKey: String {
         return NSBundle.mainBundle().URLForResource("APIKEY", withExtension: nil).flatMap { url -> String? in
             do { return try String(contentsOfURL: url) } catch { return nil }
-        }
+        } ?? ""
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tileOverlay = OSTileOverlay(APIKey: apiKey ?? "", product: .Zoom)
+        let tileOverlay = OSTileOverlay(APIKey: apiKey, product: .Zoom)
         mapView.addOverlay(tileOverlay)
         mapView.delegate = self
         mapView.centerCoordinate = CLLocationCoordinate2D(latitude: 50.9386, longitude: -1.4705)
@@ -37,6 +38,10 @@ extension ViewController: MKMapViewDelegate {
         }
 
         return MKTileOverlayRenderer(tileOverlay: tileOverlay)
+    }
+
+    func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        restriction.updateMapViewRegionIfRequired(mapView)
     }
 }
 
