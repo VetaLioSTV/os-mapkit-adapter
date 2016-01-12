@@ -15,5 +15,6 @@ FOUNDATION_EXPORT double OSMapKitAdapterVersionNumber;
 FOUNDATION_EXPORT const unsigned char OSMapKitAdapterVersionString[];
 
 #import <OSMapKitAdapter/OSTileOverlay.h>
+#import <OSMapKitAdapter/OSMapProduct.h>
 #import <OSMapKitAdapter/OSUKRegion.h>
 #import <OSMapKitAdapter/OSMapViewRegionRestriction.h>
