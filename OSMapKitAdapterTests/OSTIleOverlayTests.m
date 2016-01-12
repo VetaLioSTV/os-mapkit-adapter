@@ -18,7 +18,7 @@
 
 - (void)testATileOverlayHasAURLTemplate {
     OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@"test-key" product:OSMapProductRoad];
-    expect(tileOverlay.URLTemplate).to.equal(@"https://api2.ordnancesurvey.co.uk/mapping_api/v1/service/zxy/EPSG%3A3857/Road%203857/{z}/{x}/{y}.png?apikey=test-key");
+    expect(tileOverlay.URLTemplate).to.equal(@"https://api2.ordnancesurvey.co.uk/mapping_api/v1/service/zxy/EPSG%3A3857/Road%203857/{z}/{x}/{y}.png?key=test-key");
 }
 
 - (void)testTheOverlayIntendsToReplaceContent {

@@ -11,7 +11,7 @@
 
 NSString *const _OSURLTemplate = @"https://api2.ordnancesurvey.co.uk/mapping_api/v1/"
                                   "service/zxy/EPSG%%3A3857/%@/{z}/{x}/{y}.png"
-                                  "?apikey=%@";
+                                  "?key=%@";
 
 @implementation OSTileOverlay
 
