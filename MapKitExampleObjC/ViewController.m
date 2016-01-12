@@ -13,9 +13,6 @@
 
 @interface ViewController ()<MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
-@property (assign, nonatomic) CLLocationCoordinate2D topLeftCoordinate;
-@property (assign, nonatomic) CLLocationCoordinate2D bottomRightCoordinate;
-@property (assign, nonatomic) BOOL blockMove;
 
 @property (strong, nonatomic) OSMapViewRegionRestriction *restriction;
 @end
@@ -32,9 +29,6 @@
     [super viewDidLoad];
     OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:self.apiKey
                                                                product:OSMapProductOutdoor];
-
-    self.topLeftCoordinate = OSCoordinateForGridPoint(OSGridPointMake(0, OSGridHeight));
-    self.bottomRightCoordinate = OSCoordinateForGridPoint(OSGridPointMake(OSGridWidth, 0));
 
     tileOverlay.clipOverlay = NO; // YES allows the overlay to render alongside other maps,
     // NO replaces all MapKit content
