@@ -9,6 +9,13 @@ printf "your-api-key" > APIKEY
 ```
 Please ensure your APIKEY file doesn't have a trailing new line.
 
+### Using in your own project
+Easiest way to use this framework is using carthage. Add
+```
+github "OrdnanceSurvey/os-mapkit-adapter" "master"
+```
+to your Cartfile
+
 ## OSMapKitAdapter.framework
 This framework contains an `MKTileOverlay` subclass that fetches its content
 from the OS Maps API, along with an enum describing the map products that can
