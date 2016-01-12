@@ -12,7 +12,7 @@ Please ensure your APIKEY file doesn't have a trailing new line.
 ### Using in your own project
 Easiest way to use this framework is using carthage. Add
 ```
-github "OrdnanceSurvey/os-mapkit-adapter" "master"
+github "OrdnanceSurvey/os-mapkit-adapter"
 ```
 to your Cartfile
 
