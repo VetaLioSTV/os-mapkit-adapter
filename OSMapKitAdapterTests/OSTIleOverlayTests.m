@@ -17,23 +17,23 @@
 @implementation OSTIleOverlayTests
 
 - (void)testATileOverlayHasAURLTemplate {
-    OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@"test-key" product:OSMapProductZoom];
-    expect(tileOverlay.URLTemplate).to.equal(@"https://api.ordnancesurvey.co.uk/mapping_api/service/zxy/EPSG%3A900913/Zoom%20Map%203857/{z}/{x}/{y}.png?apikey=test-key");
+    OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@"test-key" product:OSMapProductRoad];
+    expect(tileOverlay.URLTemplate).to.equal(@"https://api2.ordnancesurvey.co.uk/mapping_api/v1/service/zxy/EPSG%3A3857/Road%203857/{z}/{x}/{y}.png?apikey=test-key");
 }
 
 - (void)testTheOverlayIntendsToReplaceContent {
-    OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@"test-key" product:OSMapProductZoom];
+    OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@"test-key" product:OSMapProductRoad];
     expect(tileOverlay.canReplaceMapContent).to.beTruthy();
 }
 
 - (void)testWhenSetToNotClipTheBoundingMapRectIsNull {
-    OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@"test-key" product:OSMapProductZoom];
+    OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@"test-key" product:OSMapProductRoad];
     MKMapRect receivedRect = tileOverlay.boundingMapRect;
     expect(MKMapRectEqualToRect(receivedRect, MKMapRectWorld)).to.beTruthy();
 }
 
 - (void)testWhenSetToClipTheBoundingMapRectIsSetCorrectly {
-    OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@"test-key" product:OSMapProductZoom];
+    OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@"test-key" product:OSMapProductRoad];
     tileOverlay.clipOverlay = YES;
     MKMapRect receivedRect = tileOverlay.boundingMapRect;
     expect(MKMapRectEqualToRect(receivedRect, OSMapRectForUK())).to.beTruthy();

@@ -9,8 +9,8 @@
 #import "OSTileOverlay.h"
 #import "OSUKRegion.h"
 
-NSString *const _OSURLTemplate = @"https://api.ordnancesurvey.co.uk/mapping_api/"
-                                  "service/zxy/EPSG%%3A900913/%@/{z}/{x}/{y}.png"
+NSString *const _OSURLTemplate = @"https://api2.ordnancesurvey.co.uk/mapping_api/v1/"
+                                  "service/zxy/EPSG%%3A3857/%@/{z}/{x}/{y}.png"
                                   "?apikey=%@";
 
 @implementation OSTileOverlay

@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tileOverlay = OSTileOverlay(APIKey: apiKey, product: .Zoom)
+        let tileOverlay = OSTileOverlay(APIKey: apiKey, product: .Road)
         mapView.addOverlay(tileOverlay)
         mapView.delegate = self
         mapView.centerCoordinate = CLLocationCoordinate2D(latitude: 50.9386, longitude: -1.4705)

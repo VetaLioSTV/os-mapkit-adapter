@@ -13,9 +13,21 @@
  */
 typedef NS_ENUM(NSInteger, OSMapProduct) {
     /**
-     *  Standard zoom map product
+     *  Road map product
      */
-    OSMapProductZoom
+    OSMapProductRoad,
+    /**
+     *  Outdoor map product
+     */
+    OSMapProductOutdoor,
+    /**
+     *  Light map product
+     */
+    OSMapProductLight,
+    /**
+     *  Dark styled map product
+     */
+    OSMapProductNight
 };
 
 /**

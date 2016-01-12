@@ -10,7 +10,13 @@
 
 NSString *NSStringFromOSMapProduct(OSMapProduct product) {
     switch (product) {
-        case OSMapProductZoom:
-            return @"Zoom Map 3857";
+        case OSMapProductRoad:
+            return @"Road 3857";
+        case OSMapProductOutdoor:
+            return @"Outdoor 3857";
+        case OSMapProductLight:
+            return @"Light 3857";
+        case OSMapProductNight:
+            return @"Night 3857";
     }
 }

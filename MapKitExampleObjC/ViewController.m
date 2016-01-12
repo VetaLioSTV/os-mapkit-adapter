@@ -31,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:self.apiKey
-                                                               product:OSMapProductZoom];
+                                                               product:OSMapProductOutdoor];
 
     self.topLeftCoordinate = OSCoordinateForGridPoint(OSGridPointMake(0, OSGridHeight));
     self.bottomRightCoordinate = OSCoordinateForGridPoint(OSGridPointMake(OSGridWidth, 0));
