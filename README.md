@@ -35,7 +35,7 @@ key and the product you wish to view:
 
 ```objc
     OSTileOverlay *tileOverlay = [[OSTileOverlay alloc] initWithAPIKey:@"API-KEY"
-                                                           product:OSMapProductOutdoor];
+                                                               product:OSMapProductOutdoor];
 ```
 ```swift
     let tileOverlay = OSTileOverlay(APIKey: apiKey, product: .Road)
