@@ -16,7 +16,7 @@
 
 @implementation OSMapViewRegionRestriction
 
-- (MKCoordinateRegion)mapKitFromCoordinateRegion:(OSCoordinateRegion)input {
+- (MKCoordinateRegion)mapKitRegionFromOSCoordinateRegion:(OSCoordinateRegion)input {
     NSValue *castValue = [NSValue value:&input withObjCType:@encode(OSCoordinateRegion)];
     MKCoordinateRegion output;
     [castValue getValue:&output];
@@ -27,7 +27,7 @@
     if ((self = [super init])) {
         OSCoordinateRegion zoomedUK = OSCoordinateRegionForGridRect(
             OSGridRectMake(0, 0, OSGridWidth - 200000, OSGridHeight - 200000));
-        _initialRegion = [self mapKitFromCoordinateRegion:zoomedUK];
+        _initialRegion = [self mapKitRegionFromOSCoordinateRegion:zoomedUK];
     }
     return self;
 }

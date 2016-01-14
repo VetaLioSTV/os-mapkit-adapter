@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,15 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UFc-NF-ygy">
-                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UFc-NF-ygy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="84A-wf-OGl"/>
-                            <constraint firstItem="UFc-NF-ygy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GKd-55-588"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UFc-NF-ygy" secondAttribute="bottom" id="HpG-z8-oOg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="UFc-NF-ygy" secondAttribute="trailing" id="h9T-ze-bS5"/>
+                            <constraint firstItem="UFc-NF-ygy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="1wF-aj-KfZ"/>
+                            <constraint firstItem="UFc-NF-ygy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XNb-N8-fxx"/>
+                            <constraint firstItem="UFc-NF-ygy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="crD-uK-a9L"/>
+                            <constraint firstItem="UFc-NF-ygy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="lVe-vL-yMP"/>
                         </constraints>
                     </view>
                     <connections>

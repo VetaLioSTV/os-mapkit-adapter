@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -18,15 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Wsw-hk-qsp">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Wsw-hk-qsp" secondAttribute="trailing" id="7jw-t6-e9T"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wsw-hk-qsp" secondAttribute="bottom" id="R53-ZM-ph6"/>
-                            <constraint firstItem="Wsw-hk-qsp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Zzn-bG-Ika"/>
-                            <constraint firstItem="Wsw-hk-qsp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oWQ-Ye-fBQ"/>
+                            <constraint firstItem="Wsw-hk-qsp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9J3-lA-ZCz"/>
+                            <constraint firstItem="Wsw-hk-qsp" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="JVU-zf-mHo"/>
+                            <constraint firstItem="Wsw-hk-qsp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="umA-Mn-wMV"/>
+                            <constraint firstItem="Wsw-hk-qsp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="yiU-bh-DA8"/>
                         </constraints>
                     </view>
                     <connections>
