@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4530201F1CA2CDFA0064DD05 /* OSTransformation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4530201E1CA2CDFA0064DD05 /* OSTransformation.framework */; };
+		453020201CA2CE330064DD05 /* OSTransformation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4530201E1CA2CDFA0064DD05 /* OSTransformation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4531D08B1C3FD6DA0025C802 /* APIKEY in Resources */ = {isa = PBXBuildFile; fileRef = 4531D08A1C3FD6DA0025C802 /* APIKEY */; };
 		4531D08C1C3FD6DA0025C802 /* APIKEY in Resources */ = {isa = PBXBuildFile; fileRef = 4531D08A1C3FD6DA0025C802 /* APIKEY */; };
-		4531D08D1C3FE07E0025C802 /* OSGridPointConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */; };
-		454B95061C3FE8FC00CA69FB /* OSGridPointConversion.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		454B95091C3FE96300CA69FB /* OSUKRegion.h in Headers */ = {isa = PBXBuildFile; fileRef = 454B95071C3FE96300CA69FB /* OSUKRegion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		454B950A1C3FE96300CA69FB /* OSUKRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 454B95081C3FE96300CA69FB /* OSUKRegion.m */; };
 		454B950D1C3FF15F00CA69FB /* OSMapViewRegionRestriction.h in Headers */ = {isa = PBXBuildFile; fileRef = 454B950B1C3FF15F00CA69FB /* OSMapViewRegionRestriction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		454B950E1C3FF15F00CA69FB /* OSMapViewRegionRestriction.m in Sources */ = {isa = PBXBuildFile; fileRef = 454B950C1C3FF15F00CA69FB /* OSMapViewRegionRestriction.m */; };
 		454B95101C3FF7AF00CA69FB /* OSMapViewRegionRestrictionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 454B950F1C3FF7AF00CA69FB /* OSMapViewRegionRestrictionTests.m */; };
-		454B95141C4402F200CA69FB /* OSGridPointConversion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45E3712B1C3D02FF00D892DE /* OSMapKitAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E3712A1C3D02FF00D892DE /* OSMapKitAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45E371321C3D02FF00D892DE /* OSMapKitAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; };
 		45E371431C3D054800D892DE /* OSTileOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E371411C3D054800D892DE /* OSTileOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,8 +47,6 @@
 		45E371981C3D3DE600D892DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E371961C3D3DE600D892DE /* LaunchScreen.storyboard */; };
 		45E3719E1C3D3EB600D892DE /* OSMapKitAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; };
 		45E3719F1C3D3EB600D892DE /* OSMapKitAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		45E371A51C3D560200D892DE /* OSGridPointConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */; };
-		45E371A61C3D560200D892DE /* OSGridPointConversion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45E371A71C3D560200D892DE /* OSMapKitAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; };
 		45E371A81C3D560200D892DE /* OSMapKitAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45E371271C3D02FF00D892DE /* OSMapKitAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -85,9 +82,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				454B95061C3FE8FC00CA69FB /* OSGridPointConversion.framework in CopyFiles */,
 				45E371601C3D184100D892DE /* Expecta.framework in CopyFiles */,
 				45E371611C3D184100D892DE /* MIQTestingFramework.framework in CopyFiles */,
+				453020201CA2CE330064DD05 /* OSTransformation.framework in CopyFiles */,
 				45E371621C3D184100D892DE /* OCMock.framework in CopyFiles */,
 				45E371631C3D184200D892DE /* OHHTTPStubs.framework in CopyFiles */,
 				45E371641C3D184200D892DE /* Specta.framework in CopyFiles */,
@@ -101,7 +98,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				454B95141C4402F200CA69FB /* OSGridPointConversion.framework in Embed Frameworks */,
 				45E3719F1C3D3EB600D892DE /* OSMapKitAdapter.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -114,7 +110,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				45E371A81C3D560200D892DE /* OSMapKitAdapter.framework in Embed Frameworks */,
-				45E371A61C3D560200D892DE /* OSGridPointConversion.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +117,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4530201E1CA2CDFA0064DD05 /* OSTransformation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSTransformation.framework; path = Carthage/Build/iOS/OSTransformation.framework; sourceTree = "<group>"; };
 		4531D08A1C3FD6DA0025C802 /* APIKEY */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = APIKEY; sourceTree = "<group>"; };
 		454B95071C3FE96300CA69FB /* OSUKRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUKRegion.h; sourceTree = "<group>"; };
 		454B95081C3FE96300CA69FB /* OSUKRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSUKRegion.m; sourceTree = "<group>"; };
@@ -160,7 +156,6 @@
 		45E371941C3D3DE600D892DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E371971C3D3DE600D892DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45E371991C3D3DE600D892DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSGridPointConversion.framework; path = Carthage/Build/iOS/OSGridPointConversion.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4531D08D1C3FE07E0025C802 /* OSGridPointConversion.framework in Frameworks */,
+				4530201F1CA2CDFA0064DD05 /* OSTransformation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +185,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45E371A71C3D560200D892DE /* OSMapKitAdapter.framework in Frameworks */,
-				45E371A51C3D560200D892DE /* OSGridPointConversion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +303,7 @@
 		45E371A31C3D559F00D892DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				45E371A41C3D55EC00D892DE /* OSGridPointConversion.framework */,
+				4530201E1CA2CDFA0064DD05 /* OSTransformation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

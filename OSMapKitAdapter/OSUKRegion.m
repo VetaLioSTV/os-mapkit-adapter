@@ -7,7 +7,7 @@
 //
 
 #import "OSUKRegion.h"
-@import OSGridPointConversion;
+@import OSTransformation;
 
 CLLocationCoordinate2D OSUpperLeftCorner() {
     return OSCoordinateForGridPoint(OSGridPointMake(0, OSGridHeight));

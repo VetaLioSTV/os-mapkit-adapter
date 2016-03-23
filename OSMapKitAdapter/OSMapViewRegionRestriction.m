@@ -7,7 +7,7 @@
 //
 
 #import "OSMapViewRegionRestriction.h"
-@import OSGridPointConversion;
+@import OSTransformation;
 #import "OSUKRegion.h"
 
 @interface OSMapViewRegionRestriction ()

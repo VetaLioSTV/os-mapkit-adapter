@@ -9,7 +9,7 @@
 @import MapKit;
 @import OSMapKitAdapter;
 @import MIQTestingFramework;
-@import OSGridPointConversion;
+@import OSTransformation;
 #import "OSUKRegion.h"
 
 @interface OSMapViewRegionRestrictionTests : XCTestCase
