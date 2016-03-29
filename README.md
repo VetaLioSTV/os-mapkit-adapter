@@ -81,3 +81,6 @@ instance of this class, and pass your map view to this instance in
 A radar has been filed with apple for an enhancement to make this nicer and
 easier. Feel free to duplicate it if you're interested. You can see what we
 filed [here](RegionLimitFeatureRequest.md)
+
+### License
+This framework is released under the [Apache 2.0 License](LICENSE)
